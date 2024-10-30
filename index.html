@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="André Diekmann, Orhan Güzel, Norman Tetzlaff">
+    <link rel="stylesheet" href="style.css">
+    <title>Button und Container Beispiel</title>
+</head>
+<body>
+
+    <header>
+        <h1>Online Shopping </h1>
+    </header>
+
+    <div id="DivContainer">
+        <div class="category">
+            <h2>Laptop</h2>
+            <img src="./assets/beautiful.jpg" class="category-img"alt="Laptop">
+            <button class="button-detail" data-category="Laptop" onclick="showCategoryProducts(event),handleClick()">Detail</button>
+        </div>
+        <div class="category">
+            <h2>Flat-computer</h2>
+            <img src="./assets/flat-computer.jpg"class="category-img" alt="Flat-computer">
+            <button class="button-detail" data-category="Flat-computer"
+                onclick="showCategoryProducts(event), handleClick()">Detail</button>
+        </div>
+        <div class="category">
+            <h2>Modern-desktop</h2>
+            <img src="./assets/modern-desktop.jpg" class="category-img" alt="Modern-desktop">
+            <button class="button-detail" data-category="Modern-desktop"
+                onclick="showCategoryProducts(event),handleClick() ">Detail</button>
+        </div>
+
+        <!-- Ürünlerin Gösterileceği Alan -->
+        <div id="product-list"></div>
+
+    </div>
+
+
+    <div class="footer"> 
+        <p>Copyright
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>
